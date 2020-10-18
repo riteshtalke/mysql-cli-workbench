@@ -135,22 +135,10 @@ def deleteTable(tablename, conn, where={}, key='AND'):
     cursor.execute(delete)
     conn.commit()
 
-conn=connectToDB('college','root')
-
-h={'Address':'Nashik'}
-p=['student_id','student_name']
-
-w={'student_id':'4','student_name':'D'}
-d={'Address':'Pune'}
 
 
-'''deleteTable('student',w,'AND',conn)
-selectFromTable('student',p,h,[],conn)
 
 
-updateTable('student',w,d,'and',conn)
-selectFromTable('student',p,h,[],conn'''
 
-col={'A' : 'int', 'B': 'varchar(20)'}
-createTable('ASD',conn,col)
+
 
